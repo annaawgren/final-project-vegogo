@@ -18,12 +18,14 @@ mongoose.connection.once("open", () => console.log("Connected to mongodb"))
 
 
 const Restaurant = mongoose.model("Eat", {
-  name: String
-  // street: String,
-  // zipcode: Number,
-  // city: String,
-  // phoneNumber: Number,
-  // description: String
+  name: String,
+  long: Number,
+  lat: Number,
+  vegan: Boolean,
+  description: String,
+  homepage: String,
+  phoneNumber: Number,
+  openingHours: String
 })
 
 //get the model and saves it on the database

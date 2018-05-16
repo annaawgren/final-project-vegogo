@@ -3,3 +3,12 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "URWGeometric-Bold.woff";
+  src: url("/URWGeometric-Bold.woff") format("woff");
+}

@@ -1,0 +1,36 @@
+.hero-container {
+  height: auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.hero-explainer {
+  font-size: 1.5em;
+  font-family: "URWGeometric-Bold.woff";
+}
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.signup-container--p {
+  font-size: 1em;
+  font-family: "URWGeometric-Bold.woff";
+  text-align: center;
+}
+
+.signup-field {
+  outline: none;
+  border-bottom: 1px solid black;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  width: 200px;
+  height: 50px;
+}
