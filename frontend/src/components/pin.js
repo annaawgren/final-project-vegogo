@@ -6,10 +6,30 @@ import "./css/pin.css"
 
 class Pin extends React.Component {
 
+  constructor(props) {
+    super(props)
+    this.state = {
+      pinInfoVisible: false
+    }
+  }
+
+  handlePinInfoClick = () => {
+    this.setState({ pinInfoVisible: !this.state.pinInfoVisible })
+  }
+
+
   render() {
     return(
-      <div className="test">
-        <p>{this.props.text}</p>
+      <div className="" >
+
+        <div className="pin-container">
+          <div onClick={this.handlePinInfoClick} className="test" />
+          <div className={`pin-info ${this.state.pinInfoVisible ? "visible" : "hidden"}`}>
+            hej
+          </div>
+        </div>
+
+
       </div>
 
     )

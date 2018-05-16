@@ -8,6 +8,13 @@ import Pin from "./pin"
 
 class Map extends React.Component {
 
+  constructor(props) {
+    super(props)
+    this.state = {
+      restaurantList: []
+    }
+  }
+
   static defaultProps = {
     center: {
       lat: 59.334591,
@@ -16,7 +23,18 @@ class Map extends React.Component {
     zoom: 12
   };
 
+  componentDidMount() {
+    fetch("http://localhost:3000/restaurant").then(response => (
+      response.json()
+    )).then(json => {
+      this.setState({ restaurantList: json })
+    })
+  }
+
+
+
   render() {
+    console.log(this.state)
     return (
       // Important! Always set the container height explicitly
       <div style={{ height: '100vh', width: '100%' }}>
@@ -25,7 +43,9 @@ class Map extends React.Component {
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
         >
-          <Pin lat={59.320805} lng={18.032224} />
+          {this.state.restaurantList.map(restaurant => (
+            <Pin lat={restaurant.long} lng={restaurant.lat} key={restaurant._id} />
+          ))}
 
         </GoogleMapReact>
       </div>
