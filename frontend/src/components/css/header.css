@@ -1,11 +1,14 @@
 .header-container {
-  height: 150px;
+  height: 100px;
+  width: 100%;
+  padding: 20px 100px;
   display: flex;
   flex-flow: row;
   justify-content: space-between;
   align-items:center;
-  margin: 20px 0px;
-
+  margin: 0px;
+  position: absolute;
+  top: 20px;
 }
 
 .vegogo-logo {
@@ -14,6 +17,7 @@
   letter-spacing: -3px;
   margin: 0px;
   padding: 0px;
+  color: white;
 }
 
 .hamburger {

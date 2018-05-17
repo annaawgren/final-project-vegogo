@@ -35,7 +35,7 @@ class Map extends React.Component {
 
 
   render() {
-    console.log(this.state)
+
     return (
       // Important! Always set the container height explicitly
       <div style={{ height: '100vh', width: '100%' }}>
@@ -45,7 +45,12 @@ class Map extends React.Component {
           defaultZoom={this.props.zoom}
         >
           {this.state.restaurantList.map(restaurant => (
-            <Pin lat={restaurant.long} lng={restaurant.lat} key={restaurant._id} />
+            <Pin
+              lat={restaurant.long}
+              lng={restaurant.lat}
+              key={restaurant._id}
+              name={restaurant.name}
+              homepage={restaurant.homepage} />
           ))}
 
         </GoogleMapReact>

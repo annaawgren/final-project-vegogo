@@ -4,35 +4,13 @@ import "./css/pin.css"
 
 class Pininfo extends React.Component {
 
-  constructor(props) {
-    super(props)
-    this.state = {
-      restaurantList: []
-    }
-  }
-
-  componentDidMount() {
-    fetch("http://localhost:3000/restaurant").then(response => (
-      response.json()
-    )).then(json => {
-      this.setState({ restaurantList: json })
-    })
-  }
 
   render() {
-    console.log(this.props._id);
     return(
-      <div>
-        <div>
+      <div className="pininfo-container">
+        <h1>{this.props.name}</h1>
+        <h2>{this.props.homepage}</h2>
 
-          {this.props.id}
-          {/* {this.state.restaurantList.map((restaurant, index) => {
-            return (
-              {this.props.index}
-            )
-          }
-          )} */}
-        </div>
       </div>
     )
   }

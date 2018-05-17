@@ -9,8 +9,11 @@
 }
 
 .hero-explainer {
-  font-size: 1.5em;
+  font-size: 2em;
   font-family: "URWGeometric-Bold.woff";
+  position: absolute;
+  top: 400px;
+  color: white;
 }
 
 .signup-container {
@@ -18,12 +21,15 @@
   justify-content: center;
   align-items: center;
   flex-flow: column;
+  position: absolute;
+  top: 600px;
 }
 
 .signup-container--p {
-  font-size: 1em;
+  font-size: 1.5em;
   font-family: "URWGeometric-Bold.woff";
   text-align: center;
+  color: white;
 }
 
 .signup-field {
@@ -32,12 +38,15 @@
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
-  width: 200px;
+  width: 400px;
   height: 50px;
+  background: none;
+
 }
 
 video {
   width: 100%;
   height: auto;
   position: relative;
+  z-index: -2;
 }
