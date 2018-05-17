@@ -1,6 +1,8 @@
 import React from "react"
 import GoogleMapReact from 'google-map-react'
 
+import Pininfo from "./pininfo"
+import { Link } from "react-router-dom"
 import "./css/pin.css"
 
 
@@ -20,16 +22,14 @@ class Pin extends React.Component {
 
   render() {
     return(
-      <div className="" >
+      <div>
+
 
         <div className="pin-container">
           <div onClick={this.handlePinInfoClick} className="test" />
-          <div className={`pin-info ${this.state.pinInfoVisible ? "visible" : "hidden"}`}>
-            hej
-          </div>
+        <Link to={`/restaurants/${this.props.id}` } />
         </div>
-
-
+        {this.state.pinInfoVisible ? <Pininfo key={this.props.id} /> : null}
       </div>
 
     )

@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: center;
   padding-bottom: 30px;
+  position: relative;
 }
 
 .hero-explainer {
@@ -38,4 +39,5 @@
 video {
   width: 100%;
   height: auto;
+  position: relative;
 }

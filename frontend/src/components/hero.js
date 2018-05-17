@@ -10,10 +10,11 @@ class Hero extends React.Component {
     return(
       <div >
 
-        <Header />
+
 
         <div className="hero-container">
-
+          <Header />
+          
           <video autoPlay loop infinite="true" >
             <source className="video" src={require("../images/hamburger.mp4")} alt="video" />
           </video>

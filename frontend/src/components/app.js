@@ -6,6 +6,7 @@ import Map from "./map"
 import Footer from "./footer"
 import Header from "./header"
 import Hero from "./hero"
+import Pininfo from "./pininfo"
 
 import "./css/app.css"
 
@@ -17,12 +18,16 @@ class App extends React.Component {
 
   render() {
     return (
+      <BrowserRouter>
       <div className="app-container">
-        
+
         <Hero />
         <Map />
         <Footer />
+        <Route exact path="/" component={Map} />
+        <Route path="restaurant:id" component={Pininfo} />
       </div>
+    </BrowserRouter>
     )
   }
 
