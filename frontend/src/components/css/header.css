@@ -1,7 +1,7 @@
 .header-container {
   height: 100px;
   width: 100%;
-  padding: 20px 100px;
+  padding: 20px 100px 0px 30px;
   display: flex;
   flex-flow: row;
   justify-content: space-between;
@@ -13,7 +13,7 @@
 
 .vegogo-logo {
   font-family: "URWGeometric-Bold.woff";
-  font-size: 8em;
+  font-size: 5.5em;
   letter-spacing: -3px;
   margin: 0px;
   padding: 0px;

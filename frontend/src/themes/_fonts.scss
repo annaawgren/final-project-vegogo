@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "URWGeometric-Bold.woff";
+  src: url("/URWGeometric-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "URWGeometric-Regular.woff";
+  src: url("/URWGeometric-Regular.woff") format("woff");
+}
+
+$custom-font: "URWGeometric-Bold.woff";
+$custom-font-reg: "URWGeometric-Regular.woff";

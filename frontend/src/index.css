@@ -8,6 +8,15 @@ body {
   box-sizing: border-box;
 }
 
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  margin: 0px;
+  padding: 0px;
+}
 @font-face {
   font-family: "URWGeometric-Bold.woff";
   src: url("/URWGeometric-Bold.woff") format("woff");

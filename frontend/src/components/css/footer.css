@@ -1,0 +1,64 @@
+.footer-container {
+  height: 500px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  padding-top: 100px;
+
+}
+
+.socialmedia-container {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.socialmedia-link {
+  height: 40px;
+  width: 40px;
+  background: black;
+  margin: 0 30px 0 0;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+.logo-copyright-container {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0px 30px 30px 30px;
+}
+
+.copyright-footer {
+  font-family: "URWGeometric-Bold.woff";
+  font-size: 12px;
+  color: lightgrey;
+}
+
+.vegogo-logo-footer {
+  font-family: "URWGeometric-Bold.woff";
+  font-size: 5em;
+  letter-spacing: -3px;
+  margin: 0px;
+  padding: 0px;
+  color: black;
+}
+
+.footer-txt-container{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+
+}
+.footer-txt {
+  font-family: "URWGeometric-Bold.woff";
+  font-size: 1.5em;
+  color: black;
+  margin:30px;
+}

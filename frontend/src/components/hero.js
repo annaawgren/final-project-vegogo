@@ -1,36 +1,47 @@
 import React from "react"
 import Header from "./header"
 import ReactPlayer from 'react-player'
+import Map from "./map"
 
 import "./css/hero.css"
+import scroll from "../images/scroll.png"
+
 
 
 class Hero extends React.Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      email: ""
+    }
+  }
+
+  signUp() {
+    console.log("this state", this.state);
+  }
 
   render() {
     return(
       <div >
 
-
-
         <div className="hero-container">
+
           <Header />
 
           <video autoPlay loop infinite="true" >
-            {/* <ReactPlayer url="https://player.vimeo.com/video/270345212" playing /> */}
-            <source className="video" src={require("../images/hamburger.mp4")} type="video/mp4" alt="video" />
+            <source className="video" src={require("../images/veganvideo.mp4")} type="video/mp4" alt="video" />
           </video>
-          <p className="hero-explainer">Wanna eat vego? With vegogo you'll know where to go. Wow wow wow! <span>✌️</span> </p>
-          <div className="signup-container">
-            <form>
-              <p className="signup-container--p">Sign up for our newsletter</p>
-              <p className="signup-container--p">(no spamming, just <span>❤️</span>offers!)</p>
-              <input className="signup-field"
-                title="sign up"
-              />
-            </form>
+
+          <div className="scroll-container">
+            <div className="scroll-img">
+              <a className="scroll-link" href="#f1">
+              <img src={scroll} />
+              </a>
+            </div>
           </div>
+
         </div>
+
       </div>
     )
   }
