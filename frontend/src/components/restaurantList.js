@@ -25,6 +25,7 @@ class RestaurantList extends React.Component {
         {this.state.restaurantList.map(restaurant => (
           <div>
             <h2>{restaurant.name}</h2>
+            <h2>{restaurant.homepage}</h2>
             <h2>{restaurant.homepage}</h2> />
           </div>
         ))}

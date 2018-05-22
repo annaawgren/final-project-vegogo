@@ -1,10 +1,12 @@
 import React from "react"
+import { Route } from "react-router-dom"
 import { Parallax, Background } from "react-parallax"
 import Hero from "./hero"
 import Map from "./map"
 import Pininfo from "./pininfo"
 import Signup from "./signupComponent"
 import heroimg from "../images/heroimg.jpg"
+import RestaurantList from "./restaurantList"
 
 import "./css/map.css"
 import "./css/pin.css"
@@ -55,14 +57,18 @@ class Home extends React.Component {
           bgImage={require("../images/heropics.gif")}
           bgImageAlt="the dog"
           strength={200} >
+          <Hero id="f1" />
+        </Parallax>
 
-        <Hero id="f1" />
-
-      </Parallax>
+        <Route path="/restaurant-list" component={RestaurantList} />
 
         <div className="map-container">
           {paramInfo && this.renderPinInfo(paramInfo)}
-          <Map />
+
+          <Route path="/restaurant-map" component={Map} />
+          <Route path="/home" component={Map} />
+          <Route exact path="/" component={Map} />
+          <Route path="/restaurant/:name" component={Map} />
         </div>
 
         <Signup />

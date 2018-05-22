@@ -8,7 +8,6 @@ class Header extends React.Component {
     return(
       <div className="header-container">
         <h1 className="vegogo-logo">vegogo</h1>
-
       </div>
     )
   }

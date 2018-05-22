@@ -34,17 +34,27 @@ class Map extends React.Component {
     })
   }
 
+
   render() {
     return (
       <div className="map-container" id="f1">
 
+        <h1 className="map-explainer">The best vegan places <br />to eat in Stockholm</h1>
+
         <div className="mapOrList-container">
-          <Link to="/home" className="mapOrList-link">
-            <h1 className="mapOrList-txt">map</h1>
-          </Link>
-          <Link to="/restaurants" className="mapOrList-link">
-            <h1 className="mapOrList-txt">/list</h1>
-          </Link>
+          <div className="mapList-box">
+            <Link to="/restaurant-map" className="mapOrList-link">
+              <h1 className="mapOrList-txt">map</h1>
+            </Link>
+            <Link to="/restaurant-list" className="mapOrList-link">
+              <h1 className="mapOrList-txt">/list</h1>
+            </Link>
+          </div>
+
+          <div className="nearMe-container">
+            <img src={nearMe} />
+            <div className="mapOrList-txt--small">Vego <br /> near me</div>
+          </div>
         </div>
 
         <div style={{ height: '100vh', width: '100%' }}>
@@ -65,11 +75,6 @@ class Map extends React.Component {
             ))}
 
           </GoogleMapReact>
-
-          <div className="mapOrList-container">
-            <img src={nearMe} />
-            <div className="mapOrList-txt--small">Near me</div>
-          </div>
 
         </div>
       </div>

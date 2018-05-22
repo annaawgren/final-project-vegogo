@@ -7,17 +7,6 @@
   position: relative;
 }
 
-.hero-explainer {
-  font-size: 15em;
-  font-family: "URWGeometric-Bold.woff";
-  position: absolute;
-  top: 200px;
-  color: black;
-  text-align: center;
-  letter-spacing: -1px;
-  color: white;
-}
-
 .video {
   width: 100%;
   height: 100vh;

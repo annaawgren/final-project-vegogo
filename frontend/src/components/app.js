@@ -22,11 +22,10 @@ class App extends React.Component {
     return (
       <HashRouter>
         <div className="app-container">
-          <Switch>
-            <Route path="/restaurants" component={RestaurantList} />
+
             <Route path="/restaurant/:name" component={Home} />
             <Route path="/" component={Home} />
-          </Switch>
+          
           <Footer />
         </div>
       </HashRouter>

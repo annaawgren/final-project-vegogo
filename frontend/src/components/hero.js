@@ -4,7 +4,6 @@ import ReactPlayer from 'react-player'
 import Map from "./map"
 
 import "./css/hero.css"
-import scroll from "../images/scroll.png"
 
 
 class Hero extends React.Component {
@@ -23,21 +22,8 @@ class Hero extends React.Component {
     return(
       <div >
         <div className="hero-container">
-
           <Header />
-
           <div className="video" />
-
-          <h1 className="hero-explainer">The new guide<br />to all vegan</h1>
-
-          {/* <div className="scroll-container">
-            <div className="scroll-img">
-              <a className="scroll-link" href="#f1">
-              <img src={scroll} />
-              </a>
-            </div>
-          </div> */}
-
         </div>
       </div>
     )
