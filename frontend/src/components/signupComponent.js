@@ -2,6 +2,7 @@ import React from "react"
 
 import "./css/hero.css"
 import melon from "../images/melon2.jpg"
+import "./css/signup.css"
 
 class Signup extends React.Component {
 

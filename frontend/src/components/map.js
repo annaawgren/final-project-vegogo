@@ -36,7 +36,14 @@ class Map extends React.Component {
     return (
       <div className="map-container" id="f1">
 
-        <div className="filter-menu" />
+        <div className="mapOrList-container">
+          <Link to="/home" className="mapOrList-link">
+            <h1 className="mapOrList-txt">map</h1>
+          </Link>
+          <Link to="/restaurants" className="mapOrList-link">
+            <h1 className="mapOrList-txt">/list</h1>
+          </Link>
+        </div>
 
       <div style={{ height: '100vh', width: '100%' }}>
         <GoogleMapReact

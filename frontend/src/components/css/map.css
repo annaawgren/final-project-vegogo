@@ -1,18 +1,37 @@
 .map-container {
   width: 100%;
   position: relative;
-  padding: 100px;
-  background: pink;
+  padding: 0px 80px 80px 80px;
 }
 
-.filter-menu {
+.mapOrList-container {
   display: flex;
   flex-flow: row;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: flex-start;
   width: 100%;
-  height: 50px;
-  background: black;
+  height: 200px;
   text-align: center;
-  color: white;
   font-size: 20px;
+}
+
+.mapOrList-txt {
+  font-size: 6em;
+  font-family: "URWGeometric-Bold.woff";
+  letter-spacing: -2px;
+}
+
+.mapOrList-txt--small {
+  font-size: 0.5em;
+  font-family: "URWGeometric-Bold.woff";
+  letter-spacing: -2px;
+}
+
+.mapOrList-link {
+  text-decoration: none;
+  color: black;
+}
+
+.mapOrList-link:hover {
+  text-decoration: underline;
 }

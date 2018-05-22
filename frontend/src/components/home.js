@@ -1,8 +1,10 @@
 import React from "react"
+import { Parallax, Background } from "react-parallax"
 import Hero from "./hero"
 import Map from "./map"
 import Pininfo from "./pininfo"
 import Signup from "./signupComponent"
+import heroimg from "../images/heroimg.jpg"
 
 import "./css/map.css"
 import "./css/pin.css"
@@ -48,7 +50,15 @@ class Home extends React.Component {
     return(
       <div>
 
+        <Parallax
+          blur={{ min: -15, max: 15 }}
+          bgImage={require("../images/heropics.gif")}
+          bgImageAlt="the dog"
+          strength={200} >
+
         <Hero id="f1" />
+
+      </Parallax>
 
         <div className="map-container">
           {paramInfo && this.renderPinInfo(paramInfo)}

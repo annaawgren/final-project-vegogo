@@ -1,8 +1,10 @@
 import React from "react"
 import GoogleMapReact from 'google-map-react'
+import { Link } from "react-router-dom"
 
 import Pininfo from "./pininfo"
-import { Link } from "react-router-dom"
+import mapPin from "../images/pin.png"
+
 import "./css/pin.css"
 
 
@@ -12,7 +14,8 @@ class Pin extends React.Component {
     return(
       <Link to={`/restaurant/${this.props.name}` }>
         <div className="pin-container">
-          <div className="pin" />
+          <img src={mapPin} />
+
         </div>
       </Link>
     )

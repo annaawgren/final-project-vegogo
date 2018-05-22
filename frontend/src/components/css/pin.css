@@ -1,8 +1,6 @@
-.pin {
-  color: red;
-  background: black;
-  width: 25px;
-  height: 25px;
+
+.pin-container img {
+  width: 30px;
   border-radius: 100px;
   text-align: center;
   position: absolute;
@@ -29,6 +27,8 @@
 .pininfo-container {
   display: flex;
   flex-flow: column;
+  justify-content: center;
+  align-items: center;
   width: 80%;
   height: 80%;
   top: 0;
@@ -44,10 +44,10 @@
 
 .pininfo-container-bg {
   padding: 20px;
-  background: black;
+  background: #78c7c8;
   opacity: 0.8;
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: 70%;
 }
 
 .pininfo-closing-icon-box {
@@ -81,6 +81,13 @@
   position: absolute;
 }
 
+.content-info-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
 .restaurant-content-container {
   display: flex;
   flex-direction: column;
@@ -105,8 +112,19 @@
   color: white;
 }
 
+.restaurant-info-pic-container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 50%;
+  justify-content: space-around;
+  background: red;
+  margin-left: 20px;
+}
+
 .restaurant-info-pic {
   width: 200px;
   height: 200px;
   background: grey;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }

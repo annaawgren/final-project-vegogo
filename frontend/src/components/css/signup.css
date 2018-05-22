@@ -1,0 +1,89 @@
+.middle-section-container {
+  height: 700px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background: #fcf5ed;
+}
+
+.melon-img {
+  height: 700px;
+  width: 40%;
+  object-fit: cover;
+}
+
+.melon-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 700px;
+}
+
+.form-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  width: 60%;
+}
+
+.signup-container--p {
+  font-size: 3vw;
+  font-family: "URWGeometric-Bold.woff";
+  text-align: center;
+  color: black;
+}
+
+.rocket {
+  font-size: 2vw;
+}
+
+.signup-field {
+  outline: none;
+  border-bottom: 2px solid grey;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  width: 500px;
+  height: 80px;
+  background: none;
+  text-align: center;
+  font-family: "URWGeometric-Bold.woff";
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.signup-field::placeholder {
+  font-family: "URWGeometric-Bold.woff";
+  color: lightgrey;
+  opacity: 1;
+}
+
+.signup-button {
+  height: 50px;
+  width: 150px;
+  outline: none;
+  border: 0px;
+  border-radius: 0px;
+  margin-top: 50px;
+  background: black;
+  font-size: 1em;
+  font-family: "URWGeometric-Bold.woff";
+  color: white;
+}
+
+.signup-button:hover{
+  opacity: 0.8;
+}
+
+.clear {
+  text-align: center;
+}

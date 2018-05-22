@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 
 import "./css/pin.css"
+import pinbg from "../images/pinbg.png"
 
 class Pininfo extends React.Component {
 
@@ -21,15 +22,26 @@ class Pininfo extends React.Component {
           </div>
         </Link>
 
-        <div className="restaurant-content-container">
-          <h1 className="restaurant-name">{this.props.name}</h1>
-          <p className="restaurant-info-txt">homepage \ {this.props.homepage}</p>
-          <p className="restaurant-info-txt">{this.props.type}</p>
-          <p className="restaurant-info-txt">{this.props.area}</p>
-          <p className="restaurant-info-txt">{this.props.description}</p>
+        <div className="content-info-container">
+
+          <div className="restaurant-content-container">
+            <h1 className="restaurant-name">{this.props.name}</h1>
+            <p className="restaurant-info-txt">{this.props.homepage}</p>
+            <p className="restaurant-info-txt">{this.props.type}</p>
+            <p className="restaurant-info-txt">{this.props.area}</p>
+            <p className="restaurant-info-txt">{this.props.description}</p>
+          </div>
+
+          <div className="restaurant-info-pic-container">
+            <div className="restaurant-info-pic"></div>
+            <div className="restaurant-info-pic"></div>
+            <div className="restaurant-info-pic"></div>
+            <div className="restaurant-info-pic"></div>
+          </div>
+
         </div>
 
-        <div className="restaurant-info-pic"></div>
+
 
         </div>
 

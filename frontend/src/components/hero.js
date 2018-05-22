@@ -7,7 +7,6 @@ import "./css/hero.css"
 import scroll from "../images/scroll.png"
 
 
-
 class Hero extends React.Component {
   constructor(props){
     super(props)
@@ -23,14 +22,13 @@ class Hero extends React.Component {
   render() {
     return(
       <div >
-
         <div className="hero-container">
 
           <Header />
 
-          <video autoPlay loop infinite="true" >
-            <source className="video" src={require("../images/veganvideo.mp4")} type="video/mp4" alt="video" />
-          </video>
+          <div className="video" />
+
+          <h1 className="hero-explainer">The new guide<br />to the best vegan places <br />to eat in Stockholm</h1>
 
           <div className="scroll-container">
             <div className="scroll-img">
@@ -41,7 +39,6 @@ class Hero extends React.Component {
           </div>
 
         </div>
-
       </div>
     )
   }

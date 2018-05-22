@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "URWGeometric-Bold.woff";
+  src: url("/URWGeometric-Bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "URWGeometric-Regular.woff";
+  src: url("/URWGeometric-Regular.woff") format("woff"); }
+
 .header-container {
   height: 100px;
   width: 100%;
@@ -5,11 +13,10 @@
   display: flex;
   flex-flow: row;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
   margin: 0px;
   position: absolute;
-  top: 20px;
-}
+  top: 20px; }
 
 .vegogo-logo {
   font-family: "URWGeometric-Bold.woff";
@@ -17,12 +24,9 @@
   letter-spacing: -3px;
   margin: 0px;
   padding: 0px;
-  color: white;
-}
+  color: white; }
 
 .hamburger {
   height: 20px;
   width: 20px;
-  background: black;
-
-}
+  background: black; }
