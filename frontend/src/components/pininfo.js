@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"
 import "./css/pin.css"
 import pinbg from "../images/pinbg.png"
 
+
 class Pininfo extends React.Component {
 
   render() {
@@ -33,9 +34,6 @@ class Pininfo extends React.Component {
           </div>
 
           <div className="restaurant-info-pic-container">
-            <div className="restaurant-info-pic"></div>
-            <div className="restaurant-info-pic"></div>
-            <div className="restaurant-info-pic"></div>
             <div className="restaurant-info-pic"></div>
           </div>
 

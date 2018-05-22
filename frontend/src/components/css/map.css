@@ -1,7 +1,7 @@
 .map-container {
   width: 100%;
   position: relative;
-  padding: 0px 80px 80px 80px;
+  padding: 50px 80px 80px 80px;
 }
 
 .mapOrList-container {
@@ -15,16 +15,20 @@
   font-size: 20px;
 }
 
+.mapOrList-container img {
+  height: 30px;
+  margin-right: 20px;
+}
+
 .mapOrList-txt {
   font-size: 6em;
   font-family: "URWGeometric-Bold.woff";
-  letter-spacing: -2px;
+  letter-spacing: px;
 }
 
 .mapOrList-txt--small {
-  font-size: 0.5em;
+  font-size: 1.5em;
   font-family: "URWGeometric-Bold.woff";
-  letter-spacing: -2px;
 }
 
 .mapOrList-link {

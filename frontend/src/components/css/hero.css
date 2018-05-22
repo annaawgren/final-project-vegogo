@@ -8,10 +8,10 @@
 }
 
 .hero-explainer {
-  font-size: 5em;
+  font-size: 15em;
   font-family: "URWGeometric-Bold.woff";
   position: absolute;
-  top: 300px;
+  top: 200px;
   color: black;
   text-align: center;
   letter-spacing: -1px;

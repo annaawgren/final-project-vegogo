@@ -1,13 +1,7 @@
 
 .pin-container img {
-  width: 30px;
-  border-radius: 100px;
-  text-align: center;
+  width: 35px;
   position: absolute;
-}
-
-.pin-info.hidden {
-  display: none;
 }
 
 .pin-info {
@@ -18,11 +12,10 @@
   top: 0;
 }
 
-/* @keyframes easeIn  {
-  0% {transform: scale(0)}
-  50% {transform: scale(0.5)}
-  100% {transform: scale(1)}
-} */
+@-webkit-keyframes easeIn  {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
 
 .pininfo-container {
   display: flex;
@@ -38,8 +31,9 @@
   z-index: 10;
   position: absolute;
   margin: 100px;
-  /* animation-name: easeIn;
-  transition: all 1s ease-in; */
+  animation-name: easeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease;
 }
 
 .pininfo-container-bg {

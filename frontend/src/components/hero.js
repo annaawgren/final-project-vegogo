@@ -28,15 +28,15 @@ class Hero extends React.Component {
 
           <div className="video" />
 
-          <h1 className="hero-explainer">The new guide<br />to the best vegan places <br />to eat in Stockholm</h1>
+          <h1 className="hero-explainer">The new guide<br />to all vegan</h1>
 
-          <div className="scroll-container">
+          {/* <div className="scroll-container">
             <div className="scroll-img">
               <a className="scroll-link" href="#f1">
               <img src={scroll} />
               </a>
             </div>
-          </div>
+          </div> */}
 
         </div>
       </div>

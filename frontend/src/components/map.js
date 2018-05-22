@@ -5,6 +5,8 @@ import apiKey from "./apikey"
 import Hero from "./hero"
 
 import Pin from "./pin"
+import checkedBG from "../images/checkedBG.jpg"
+import nearMe from "../images/nearMe.png"
 
 
 class Map extends React.Component {
@@ -45,25 +47,31 @@ class Map extends React.Component {
           </Link>
         </div>
 
-      <div style={{ height: '100vh', width: '100%' }}>
-        <GoogleMapReact
-          bootstrapURLKeys={{ key: apiKey.apiKey }}
-          defaultCenter={this.props.center}
-          defaultZoom={this.props.zoom} >
-          {this.state.restaurantList.map(restaurant => (
-            <Pin
-              lat={restaurant.lat}
-              lng={restaurant.long}
-              key={restaurant._id}
-              name={restaurant.name}
-              homepage={restaurant.homepage}
-              area={restaurant.area}
-              description={restaurant.description}
-              type={restaurant.type} />
-          ))}
+        <div style={{ height: '100vh', width: '100%' }}>
+          <GoogleMapReact
+            bootstrapURLKeys={{ key: apiKey.apiKey }}
+            defaultCenter={this.props.center}
+            defaultZoom={this.props.zoom} >
+            {this.state.restaurantList.map(restaurant => (
+              <Pin
+                lat={restaurant.lat}
+                lng={restaurant.long}
+                key={restaurant._id}
+                name={restaurant.name}
+                homepage={restaurant.homepage}
+                area={restaurant.area}
+                description={restaurant.description}
+                type={restaurant.type} />
+            ))}
 
-        </GoogleMapReact>
-      </div>
+          </GoogleMapReact>
+
+          <div className="mapOrList-container">
+            <img src={nearMe} />
+            <div className="mapOrList-txt--small">Near me</div>
+          </div>
+
+        </div>
       </div>
     );
   }
