@@ -18,13 +18,24 @@
   position: absolute;
   top: 20px; }
 
+.header-container-link {
+  text-decoration: none;
+  color: black; }
+
 .vegogo-logo {
   font-family: "URWGeometric-Bold.woff";
   font-size: 6em;
   letter-spacing: -2px;
   margin: 0px;
   padding: 0px;
-  color: white; }
+  color: white;
+  text-decoration: none; }
+
+.vegogo-link {
+  text-decoration: none; }
+
+.vegogo-link:hover {
+  text-decoration: none; }
 
 .hamburger {
   height: 20px;

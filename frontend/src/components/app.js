@@ -9,6 +9,9 @@ import Hero from "./hero"
 import Pininfo from "./pininfo"
 import Home from "./home"
 import RestaurantList from "./restaurantList"
+import Maplist from "./maplist"
+import Signup from "./signupComponent"
+import { Parallax, Background } from "react-parallax"
 
 import "./css/app.css"
 
@@ -22,10 +25,20 @@ class App extends React.Component {
     return (
       <HashRouter>
         <div className="app-container">
-
+          <Parallax
+            blur={{ min: -15, max: 15 }}
+            bgImage={require("../images/herovideoNew.gif")}
+            bgImageAlt="the dog"
+            strength={200} >
+            <Hero id="f1" />
+          </Parallax>
+          <Maplist />
+          <Switch>
+            <Route path="/restaurant-list" component={RestaurantList} />
             <Route path="/restaurant/:name" component={Home} />
             <Route path="/" component={Home} />
-          
+          </Switch>
+          <Signup />
           <Footer />
         </div>
       </HashRouter>

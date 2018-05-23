@@ -87,3 +87,40 @@
 .clear {
   text-align: center;
 }
+
+@media (max-width: 900px) {
+
+  .middle-section-container {
+    flex-flow: column;
+    height: 900px;
+    padding-bottom: 150px;
+  }
+
+  .melon-img {
+    width: 100%;
+  }
+
+  .melon-img img {
+    height: 400px;
+  }
+
+  .signup-container--p {
+    font-size: 6vw;
+  }
+
+  .signup-field {
+    width: 400px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .signup-container--p {
+    font-size: 6vw;
+  }
+
+  .signup-field {
+    width: 300px;
+  }
+
+}

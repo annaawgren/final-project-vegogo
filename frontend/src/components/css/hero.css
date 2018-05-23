@@ -31,22 +31,6 @@
   color: white;
 }
 
-@keyframes bounce  {
-  0%, 20%, 40%, 60%, 80%, 100% {transform: translateY(0);}
-  50% {transform: translateY(-18px);}
-}
-
-.scroll-img {
-  position: absolute;
-  z-index: 10;
-  bottom: 80px;
-  animation-name: bounce;
-  animation-duration: 2s;
-  animation-fill-mode: both;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-
 .scroll-link {
   margin: 0px;
   padding: 0px;

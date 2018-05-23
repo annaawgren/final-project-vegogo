@@ -40,14 +40,15 @@
   padding: 20px;
   background: #78c7c8;
   opacity: 0.8;
-  width: 70%;
-  height: 70%;
+  width: 50%;
+  height: 50%;
 }
 
 .pininfo-closing-icon-box {
   display: flex;
   flex-flow: column;
   width: 100%;
+  margin-bottom: 30px;
 }
 
 .pininfo-closing-icon {
@@ -118,7 +119,6 @@
 .restaurant-info-pic {
   width: 200px;
   height: 200px;
-  background: grey;
   margin-right: 20px;
   margin-bottom: 20px;
 }

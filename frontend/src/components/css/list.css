@@ -1,0 +1,42 @@
+.restaurantlist-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0;
+}
+
+.restaurantlist-box-bg {
+  background: #78c7c8;
+  opacity: 0.8;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.restaurant-img {
+  width: 200px;
+  height: 200px;
+  background: red;
+  margin-bottom: 30px;
+}
+
+.backToTop {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 200px;
+  background: none;
+  outline: none;
+  border: none;
+
+}
+
+.backToTop-txt {
+  font-size: 2em;
+  font-family: "URWGeometric-Bold.woff";
+}
+
+.top-rocket {
+  font-size: 0.8em;
+}

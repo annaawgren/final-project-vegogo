@@ -1,6 +1,9 @@
 import React from "react"
 
 import "./css/footer.css"
+import Insta from "../images/insta.jpg"
+import Facebook from "../images/facebook.jpg"
+import Spotify from "../images/spotify.jpg"
 
 class Footer extends React.Component {
 
@@ -9,9 +12,9 @@ class Footer extends React.Component {
       <div className="footer-container">
 
         <div className="socialmedia-container">
-          <div className="socialmedia-link"> f </div>
-          <div className="socialmedia-link"> i </div>
-          <div className="socialmedia-link"> t </div>
+          <div className="socialmedia-link"> <img src={Insta} /> </div>
+          <div className="socialmedia-link"> <img src={Facebook} /></div>
+          <div className="socialmedia-link"> <img src={Spotify} /></div>
         </div>
 
         <div className="footer-txt-container">

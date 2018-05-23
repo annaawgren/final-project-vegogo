@@ -32,30 +32,13 @@ class Map extends React.Component {
     )).then(json => {
       this.setState({ restaurantList: json })
     })
+    window.scrollTo(0, 920)
   }
 
 
   render() {
     return (
       <div className="map-container" id="f1">
-
-        <h1 className="map-explainer">The best vegan places <br />to eat in Stockholm</h1>
-
-        <div className="mapOrList-container">
-          <div className="mapList-box">
-            <Link to="/restaurant-map" className="mapOrList-link">
-              <h1 className="mapOrList-txt">map</h1>
-            </Link>
-            <Link to="/restaurant-list" className="mapOrList-link">
-              <h1 className="mapOrList-txt">/list</h1>
-            </Link>
-          </div>
-
-          <div className="nearMe-container">
-            <img src={nearMe} />
-            <div className="mapOrList-txt--small">Vego <br /> near me</div>
-          </div>
-        </div>
 
         <div style={{ height: '100vh', width: '100%' }}>
           <GoogleMapReact
