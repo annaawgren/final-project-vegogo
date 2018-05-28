@@ -57,14 +57,14 @@
 
 @keyframes bounce  {
   0%, 20%, 40%, 60%, 80%, 100% {transform: translateY(0);}
-  50% {transform: translateY(-18px);}
+  50% {transform: translateY(-15px);}
 }
 
 .nearMe-container img {
   height: 40px;
   z-index: 10;
   animation-name: bounce;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-fill-mode: both;
   animation-timing-function: linear;
   animation-iteration-count: infinite;

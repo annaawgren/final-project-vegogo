@@ -53,9 +53,6 @@ class Home extends React.Component {
     return(
       <div>
 
-
-
-
         <div className="map-container">
           {paramInfo && this.renderPinInfo(paramInfo)}
           {/* <Route path="/restaurant-map" component={Map} />

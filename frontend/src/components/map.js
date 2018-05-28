@@ -32,7 +32,7 @@ class Map extends React.Component {
     )).then(json => {
       this.setState({ restaurantList: json })
     })
-    window.scrollTo(0, 920)
+    // window.scrollTo(0, 0)
   }
 
 
